@@ -35,7 +35,7 @@ jobs:
         run: terraform init
         working-directory: ./aula_5/terraform
 
-      - name: "Terraform Init"
+      - name: "Terraform Apply"
         run: terraform apply -auto-approve -var="repository_name=${{ inputs.repositoryName }}"
         if: github.event_name == 'workflow_dispatch'
         working-directory: ./aula_5/terraform
