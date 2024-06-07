@@ -4,7 +4,7 @@ on:
       project:
         description: "Project Name"
         required: true
-        default: "ada_pipelines_maio"
+        default: "ada-terraform"
       repositoryName:
         description: "Repository Name"
         type: string
